@@ -1,0 +1,83 @@
+.navScroll-enter {
+    background-color:  #020611;
+    padding-top: 0 !important;
+}
+
+.navScroll-enter-active {
+    background-color: transparent;
+    padding-top: 1.5% !important;
+    transition: background-color 500ms, padding-top 500ms !important;
+}
+
+.navScroll-enter-done {
+    background-color: transparent;
+    padding-top: 1.5% !important;
+}
+
+.navScroll-exit {
+    background-color: transparent;
+    padding-top: 1.5% !important;
+}
+
+.navScroll-exit-active {
+    background-color:  #020611;
+    transition: background-color 500ms, padding-top 500ms !important;
+    padding-top: 0 !important;
+}
+
+.navScroll-exit-done {
+    background-color: #020611;
+    padding-top: 0 !important;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    padding-top: 1.5%;
+    z-index: 4;
+}
+
+.title {
+    padding-top: 32vh;
+    text-align: center;
+    font-size: 6vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(33,33,33,.2); 
+}
+
+.box:hover {
+    box-shadow: 0 0 50px rgba(33,33,33,.2); 
+    color:#3936e0
+}
+
+.background2 {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background2::after {    
+    content: "";
+    background-image: url("./Assets/SoftwareHome2.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+}
